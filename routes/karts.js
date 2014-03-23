@@ -119,7 +119,7 @@ closeKart = function(req, res){
 listOfClosedKarts = function(req, res) {
     console.log("GET - /listofclosedcarts");
     Kart.find(function(err, karts) {
-      if (!karts) {
+      if (karts.length == 0) {
         res.statusCode = 404;
         return res.send({ error: 'Not found. Probably not carts yet.' });  
       }

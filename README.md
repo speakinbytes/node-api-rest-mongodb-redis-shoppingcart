@@ -43,8 +43,10 @@ To run
 <h3>Fase 2: 
 <p>
 * Crear un carro de la compra con varias líneas de pedido.
-* Las líneas de pedido se almacernarán en redis con tiempo de expiración
+* El carrito y sus líneas de pedido se almacernarán en redis.
+* El carrito tiene un tiempo de expiración de 5 min desde que se añade el último objeto
 * Se crea un nuevo pedido en MongoDB
+* Se pueden ver todos los carritos cerrados (comprados)
       
 <h4> Rutas:
 <p>
@@ -78,7 +80,22 @@ To run
 * tener arrancado redis en otro terminal.
 * tener camisetas creadas a las que poder acceder
 
-
+<h3>Fase 4: 
+<p>
+* Crear un servicio "what's was hot then"
+* Se crea un log de artículos visitados en mongoDB
+* Se muestra una lista de artículos visitados en un rango de tiempo.
+      
+<h4> Rutas:
+<p>
+* GET /tshirt/:id - acceder a ver los detalles de una camiseta
+* GET /washot/:yearstart/:monthstart/:daystart/:yearend/:monthend/:dayend' - muestra el log de acceso a camisetas
+    
+<h4> Importante: 
+<p>
+* tener arrancado MongoDB en un terminal.
+* tener arrancado redis en otro terminal.
+* tener camisetas creadas a las que poder acceder
 
 
 
