@@ -7,6 +7,8 @@ Whats hot now service with redis. Time to expire.
 
 You need install node.js, MongoDB and redis.
 
+You can read 
+
 To run
 * $ npm install
 * start mongo server
@@ -27,6 +29,7 @@ To run
 <p>
 * Crear una API RESTful que responda a los casos CRUD.
 * La base de datos utilizadas será MongoDB.
+* http://speakinbytes.com/2014/03/api-rest-con-node-js-express-mongodb-y-moongose-js/
       
 <h4> Rutas:
 <p>
@@ -68,6 +71,7 @@ To run
 * Crear un servicio what's hot now
 * Se guardan en redis los artículos visitados (GET /tshirt/:id) con tiempo de expiración de 1 min.
 * Se crea un servicio que devuelva las camisetas "calientes"
+* http://speakinbytes.com/2014/03/node-js-redis-implementando-un-whats-hot-con-tiempo-de-expiracion/
       
 <h4> Rutas:
 <p>
@@ -89,7 +93,7 @@ To run
 <h4> Rutas:
 <p>
 * GET /tshirt/:id - acceder a ver los detalles de una camiseta
-* GET /washot/:yearstart/:monthstart/:daystart/:yearend/:monthend/:dayend' - muestra el log de acceso a camisetas
+* GET /washot/:yearstart/:monthstart/:daystart/:yearend/:monthend/:dayend - muestra el log de acceso a camisetas
     
 <h4> Importante: 
 <p>
