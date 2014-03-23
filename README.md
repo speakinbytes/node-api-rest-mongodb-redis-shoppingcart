@@ -13,8 +13,6 @@ To run
 * start redis server
 * $ server.js
 
-You can read a complete tutorial in 
-http://speakinbytes.com/2014/03/api-rest-con-node-js-express-mongodb-y-moongose-js/
 
 <h3> Tecnologías 
 <p>
