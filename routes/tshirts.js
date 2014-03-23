@@ -3,7 +3,7 @@ module.exports = function(app) {
   var Tshirt = require('../models/tshirt.js');
   var redis  = require("redis"),
       client = redis.createClient();
-  var ttl    = 86400;
+  var ttl    = 60;
 
   //GET - Return all tshirts in the DB
   findAllTshirts = function(req, res) {

@@ -11,8 +11,9 @@
         "express"       : "3.3.x",
         "mongoose"      : "3.6.x",
         "nconf"         : "0.6.x",
-        "async"         : "",
-        "winston"       : "0.7.x"        
+        "async"         : "~0.2.8",
+        "winston"       : "0.7.x",
+        "redis"         : "~0.10.1"     
     },
     "license": "MIT"
 }

@@ -35,23 +35,22 @@ app.use(function(err, req, res, next){
 });
 
 routes = require('./routes/tshirts')(app);
+routes = require('./routes/karts')(app);
 
 // Conexión
 mongoose.connect('mongodb://localhost/tshirts', function(err, res) {
-	if(err) {
-		console.log('ERROR: connecting to Database. ' + err);
-	} else {
-		console.log('Connected to Database');
-	}
+  if(err) {
+    console.log('ERROR: connecting to Database. ' + err);
+  } else {
+        console.log('Connected to Database');
+        server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
+            var addr = server.address();
+            console.log("Node start at ", addr.address + ":" + addr.port);
+        });
+  }
 });
 
 // petición GET del root que sólo muestre "Hello world!"
 app.get('/', function(req, res) {
   res.send("Hello world!");
-});
-
-
-// El servidor escucha en el puerto 3000
-server.listen(3000, function() {
-  console.log("Node server running on http://localhost:3000");
 });
