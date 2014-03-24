@@ -50,6 +50,7 @@ To run
 * El carrito tiene un tiempo de expiración de 5 min desde que se añade el último objeto
 * Se crea un nuevo pedido en MongoDB
 * Se pueden ver todos los carritos cerrados (comprados)
+* http://speakinbytes.com/2014/03/node-js-cluster/
       
 <h4> Rutas:
 <p>
